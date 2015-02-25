@@ -20,7 +20,7 @@ $(document).on('ready', function () {
             .append($('<button>').addClass('btn btn-danger delete-all-btn').attr({'type': 'button'}).text('Delete all tags!').hide())
             .append($('<ul>').addClass('tag-cloud-list'))
             .append($('<div>').addClass('input-append')
-                .append($('<input>').addClass('input-lg').attr({'type': 'text'}))
+                .append($('<input>').addClass('input-lg').attr({'type': 'text', 'maxlength': 60}))
                 .append($('<button>').addClass('btn add-btn').attr({
                     'type': 'button',
                     'disabled': true
